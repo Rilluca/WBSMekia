@@ -37,3 +37,5 @@ Route::get('/addFurniture', function () {
 });
 
 Route::post('/addFurniture',[App\Http\Controllers\FurnitureController::class, 'add'])->name('addFurniture');
+
+Route::get('/showFurniture',[App\Http\Controllers\FurnitureController::class, 'view'])->name('showFurniture');

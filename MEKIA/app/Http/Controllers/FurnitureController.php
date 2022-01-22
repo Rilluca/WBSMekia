@@ -28,18 +28,18 @@ class FurnitureController extends Controller
         return redirect()->route('addFurniture');
     }
 
-    /*public function view(){
-        $viewFurniture=DB::table('furnitures') //generate all from category in SQL
+    public function view(){
+        $viewFurniture=DB::table('furniture') //generate all from category in SQL
         
-        ->leftjoin('categories','categories.id','=','products.categoryID')
-        ->select('products.*','categories.name as catName')
+        ->leftjoin('categories','categories.id','=','furniture.categoryID')
+        ->select('furniture.*','categories.name as catName')
         ->get();
 
-        return view('showProduct')->with('products',$viewProduct);
+        return view('showFurniture')->with('furniture',$viewFurniture);
     }
 
-    public function delete($id){
-        $deleteProduct=Product::find($id);
+    /*public function delete($id){
+       $deleteProduct=Product::find($id);
         $deleteProduct->delete();
         Session::flash('success',"Product deleted successfully!");
         Return redirect()->route('showProduct');
