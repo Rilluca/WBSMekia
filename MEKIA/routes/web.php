@@ -14,9 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/staffDashboard', function(){
+    return view('staffDashboard');
+});
+
+Route::get('/addCategory', function () {
+    return view('addCategory');
+});
+
+Route::post('/addCategory',[App\Http\Controllers\CategoryController::class, 'add'])->name('addCategory');
+
+
+Route::get('/addFurniture', function () {
+    return view('addFurniture',['categoryID'=>App\Models\Category::all()]);
+});
+
+Route::post('/addFurniture',[App\Http\Controllers\FurnitureController::class, 'add'])->name('addFurniture');
