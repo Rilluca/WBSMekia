@@ -68,7 +68,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right;">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/viewFurniture">Furnitures</a>                
@@ -98,95 +98,31 @@
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Movies</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 4</a>
-                        </li>
-                    </ul>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About MEKIA</h5>
+                    <p>MEKIA is a Malaysia-based company that focuses on designing furnitures that will fit your room the most. We are always improving and working on making our design comfortable while still fitting for your room themes.</p>
                 </div>
                 <!-- Grid column -->
 
-                <hr class="clearfix w-100 d-md-none">
+                <hr class="clearfix w-90 d-md-none">
 
                 <!-- Grid column -->
                 <div class="col-md-3 mx-auto">
 
                     <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Experiences</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Customer Services</h5>
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="#!">FAQ</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="#!">Customer service</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="#!">Delivery</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Cinema</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Booking</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!">Policy</a>
                         </li>
                     </ul>
                 </div>
@@ -196,38 +132,16 @@
         </div>
         <!-- Footer Links -->
 
-        <div class="text-center p-4">
-            <div class="resources">
-                <p><i class="fa fa-info-circle" aria-hidden="true"></i>&nbspResources</p>
-
-                <hr style="width: 130px; background-color: white;">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-auto">
-                        <p class="text-center" style="float: left;">Subscribe to our new letter</p>&nbsp
-                    </div>
-                    <form class="form-inline my-2 my-lg-0" action="" method="post">
-                        <div class="col-md-5 col-12">
-                            <input class="form-control" type="text" name="email" id="email" placeholder="Enter email address">
-                        </div>
-                        <div class="col-md-5 col-12 ml-2">
-                            <button class="btn btn-outline-light my-2 my-sm-0 ml-5" type="submit"><i class="fa fa-envelope"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="contact mt-4">
-                <p>Connect With Us !!!</p>
+            <div class="contact mt-3">
+                <p>Our Social Media</p>
                 <a href="#"><i class="fa fa-instagram fa-3x ml-5"></i></a>
                 <a href="#"><i class="fa fa-facebook fa-3x ml-5"></i></a>
                 <a href="#"><i class="fa fa-twitter fa-3x ml-5"></i></a>
-                <a href="#"><i class="fa fa-youtube fa-3x ml-5"></i></a>
             </div>
         </div>
-
-        <a href="#"><img src="{{asset('images/Logo.png')}}" class="rounded-circle ml-3" alt="PC Cinema" width="100px"></a>
+        <br>
         <div class="copyright text-center p-2" style="background-color: #27292b;">
-            <p>All contents © 2021 PopCorn Cinema. All Rights Reserved.</p>
+            <p>This website was created for education purpose.</p>
         </div>
     </footer>
 

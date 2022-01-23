@@ -29,8 +29,9 @@
                     <td>{{$furniture->quantity}}</td>
                     <td>{{$furniture->catName}}</td>
                     <td>
-                    <a>Edit</a>
-                    <a>Delete</a></td>
+                    <a href="{{ route('editFurniture',['id'=>$furniture->id])}}" class="btn btn-warning btn-xs">Edit</a>
+                    <a href="{{ route('deleteFurniture',['id'=>$furniture->id])}}" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure to delete?')">Delete</a>
+                    </td>
                 </tr>
                 @endforeach
             </tbody>

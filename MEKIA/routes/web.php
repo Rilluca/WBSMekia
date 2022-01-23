@@ -38,9 +38,10 @@ Route::get('/addFurniture', function () {
 
 Route::post('/addFurniture',[App\Http\Controllers\FurnitureController::class, 'add'])->name('addFurniture');
 
-Route::get('/showFurniture',[App\Http\Controllers\FurnitureController::class, 'view'])->name('showFurniture');
+Route::get('/showFurniture',[App\Http\Controllers\FurnitureController::class, 'show'])->name('showFurniture');
 
-Route::get('/viewFurniture', function () {
-    return view('viewFurniture');
-});
+Route::get('/viewFurniture',[App\Http\Controllers\FurnitureController::class, 'view'])->name('viewFurniture');
 
+Route::get('/editFurniture/{id}',[App\Http\Controllers\FurnitureController::class,'edit'])->name('editFurniture');
+
+Route::get('/deleteFurniture/{id}',[App\Http\Controllers\FurnitureController::class,'delete'])->name('deleteFurniture');

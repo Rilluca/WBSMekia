@@ -25,11 +25,11 @@ class FurnitureController extends Controller
             'id'=>$r->id,
         ]);
         Session::flash('success',"Furniture added successful!");
-        return redirect()->route('addFurniture');
+        return redirect()->route('showFurniture');
     }
 
-    public function view(){
-        $viewFurniture=DB::table('furniture') //generate all from category in SQL
+    public function show(){
+        $showFurniture=DB::table('furniture') //generate all from category in SQL
         
         ->leftjoin('categories','categories.id','=','furniture.categoryID')
         ->select('furniture.*','categories.name as catName')
@@ -38,53 +38,53 @@ class FurnitureController extends Controller
         return view('showFurniture')->with('furniture',$viewFurniture);
     }
 
-    /*public function delete($id){
-       $deleteProduct=Product::find($id);
-        $deleteProduct->delete();
-        Session::flash('success',"Product deleted successfully!");
-        Return redirect()->route('showProduct');
-    }
-
     public function edit($id){
-       $products=Product::all()->where('id',$id);
-       
-       return view('editProduct')->with('products',$products)->with('categoryID',Category::all());
+        $furniture=Furniture::all()->where('id',$id);
+        
+        return view('editFurniture')->with('furniture',$furniture)->with('categoryID',Category::all());
     }
 
     public function update(){
         $r=request();
-        $products=Product::find($r->productID);
+        $furniture=Furniture::find($r->furnitureID);
 
-        if($r->file('productImage')!=''){
-            $image=$r->file('productImage');        
-            $image->move('images',$image->getClientOriginalName());                   
+        if($r->file('furnitureImage')!=''){
+            $image=$r->file('furnitureImage');        
+            $image->move('Images',$image->getClientOriginalName());                   
             $imageName=$image->getClientOriginalName(); 
-            $products->image=$imageName;
+            $furniture->image=$imageName;
             }    
         
-        $products->name=$r->productName;
-        $products->description=$r->productDescription;
-        $products->price=$r->productPrice;
-        $products->quantity=$r->productQuantity;
-        $products->categoryID=$r->categoryID;
-        $products->save();
+        $furniture->name=$r->furnitureName;
+        $furniture->price=$r->furniturePrice;
+        $furniture->quantity=$r->pfurnitureQuantity;
+        $furniture->categoryID=$r->categoryID;
+        $furniture->save();
 
-        return redirect()->route('showProduct');
+        return redirect()->route('showFurniture');
     }
 
-    public function productDetail($id){
-        $products=Product::all()->where('id',$id);
-
-        return view('productDetail')->with('products',$products);
+    public function delete($id){
+       $deleteFurniture=Furniture::find($id);
+        $deleteFurniture->delete();
+        Session::flash('success',"Furniture deleted successfully!");
+        Return redirect()->route('showFurniture');
     }
 
-    public function searchProduct(){
-        $r=request();
-        $keyword=$r->keyword;
-        $products=DB::table('products')->where('name','like','%',$keyword.'%')->get();
+    public function view(){
+        //$viewFurniture = Furniture::all();
+        $viewFurniture = DB::table('furniture')
+        ->select('furniture.*')
+        ->get();
+ 
+         Return view('viewFurniture')->with('furniture',$Furniture);
+     }
 
-        return view('showProduct')->with('products',$products);
-    }*/
+    public function furnitureDetail($id){
+        $furniture=Furniture::all()->where('id',$id);
+
+        return view('furnitureDetail')->with('furniture',$furniture);
+    }
 
 }
 

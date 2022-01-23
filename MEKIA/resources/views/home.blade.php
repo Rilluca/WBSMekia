@@ -28,62 +28,27 @@
     </div>
 </div>
 
-<div class="movie-content" style="background-color: #434d45; padding: 3%;">
-    <a href="#" class="title-movie mb-5" style="font-size: 30px;letter-spacing: 2px;">Latest Furniture</a>
+<div class="furniture-content" style="background-color: #434d45; padding: 3%;">
+    <a href="#" class="title-furniture mb-5" style="font-size: 30px;letter-spacing: 2px;">WHY US?</a>
     <hr style="width: 1420px; background-color: white;">
     <div style="display: flex; justify-content: space-evenly;">
         <div class="card mb-4" style="width: 400px;">
-            <img class="card-img-top" src="https://www.ikea.com/my/en/images/products/odger-chair-red__1038449_pe839684_s5.jpg?f=xl" alt="Movie poster" width="100%">
-            <div class="card-body" style="max-height: 400px;">
-                <h5 class="card-title">Furniture Name</h5>
-                <p class="card-text" style="white-space: normal;overflow: scroll;height: 200px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare? Immo alio genere; Itaque fecimus. Duo Reges: constructio interrete. Sed residamus, inquit, si placet. <i>Id est enim, de quo quaerimus.</i>Quid ad utilitatem tantae pecuniae? Qui ita affectus, beatum esse numquam probabis; Dat enim intervalla et relaxat. Ita credo. Quae cum essent dicta, discessimus.
+            <div class="card-body" style="height:100px;">
+                <h5 class="card-title">Beauitful Design</h5>
+                <p class="card-text" style="white-space: normal;">
+                    MEKIA designs guarantee you the prettiest furnitures that you can get for the best fit of your house. Our designers are always on the trend and at the front line to bring you latest design of furnitures.
                 </p>
-                <a href="/"><button class="btn btn-dark">More info</button></a>
-                <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
             </div>
         </div>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <div class="card mb-4" style="width: 400px;">
-            <img class="card-img-top" src="https://www.ikea.com/my/en/images/products/odger-chair-red__1038449_pe839684_s5.jpg?f=xl" alt="Movie poster" width="100%">
-            <div class="card-body" style="max-height: 400px;">
-                <h5 class="card-title">Furniture Name</h5>
-                <p class="card-text" style="white-space: normal;overflow: scroll;height: 200px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare? Immo alio genere; Itaque fecimus. Duo Reges: constructio interrete. Sed residamus, inquit, si placet. <i>Id est enim, de quo quaerimus.</i>Quid ad utilitatem tantae pecuniae? Qui ita affectus, beatum esse numquam probabis; Dat enim intervalla et relaxat. Ita credo. Quae cum essent dicta, discessimus.
+            <div class="card-body" style="height:200px;">
+                <h5 class="card-title">Comfortable Design</h5>
+                <p class="card-text" style="white-space: normal;height:100px;">
+                    Not only that our furnitures are aesthetic, our designers also designed them to be comfortable as well. Our customer would not have to worry about getting a good looking piece but it is not as functional as the other.
                 </p>
-                <a href="/"><button class="btn btn-dark">More info</button></a>
-                <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
-            </div>
-        </div>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="card mb-4" style="width: 400px;">
-            <img class="card-img-top" src="https://www.ikea.com/my/en/images/products/odger-chair-red__1038449_pe839684_s5.jpg?f=xl" alt="Movie poster" width="100%">
-            <div class="card-body" style="max-height: 400px;">
-                <h5 class="card-title">Furniture Name</h5>
-                <p class="card-text" style="white-space: normal;overflow: scroll;height: 200px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare? Immo alio genere; Itaque fecimus. Duo Reges: constructio interrete. Sed residamus, inquit, si placet. <i>Id est enim, de quo quaerimus.</i>Quid ad utilitatem tantae pecuniae? Qui ita affectus, beatum esse numquam probabis; Dat enim intervalla et relaxat. Ita credo. Quae cum essent dicta, discessimus.
-                </p>
-                <a href="/"><button class="btn btn-dark">More info</button></a>
-                <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
-            </div>
-        </div>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <div class="card mb-4" style="width: 400px;">
-            <img class="card-img-top" src="https://www.ikea.com/my/en/images/products/odger-chair-red__1038449_pe839684_s5.jpg?f=xl" alt="Movie poster" width="100%">
-            <div class="card-body" style="max-height: 400px;">
-                <h5 class="card-title">Furniture Name</h5>
-                <p class="card-text" style="white-space: normal;overflow: scroll;height: 200px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare? Immo alio genere; Itaque fecimus. Duo Reges: constructio interrete. Sed residamus, inquit, si placet. <i>Id est enim, de quo quaerimus.</i>Quid ad utilitatem tantae pecuniae? Qui ita affectus, beatum esse numquam probabis; Dat enim intervalla et relaxat. Ita credo. Quae cum essent dicta, discessimus.
-                </p>
-                <a href="/"><button class="btn btn-dark">More info</button></a>
-                <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
-            </div>
         </div>
     </div>
 </div>

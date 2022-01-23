@@ -2,18 +2,18 @@
 @section('content')
 
 <div class="furniture-content" style="background-color: #434d45; padding:3%; padding-top: 8%;">
-    <a href="#" class="title-movie mb-5" style="font-size: 30px;letter-spacing: 2px;">Latest Furniture</a>
+    <a href="#" class="title-movie mb-5" style="font-size: 30px;letter-spacing: 2px;">Furnitures</a>
     <hr style="width: 1420px; background-color: white;">
     <div style="display: flex; justify-content: space-evenly;">
         <div class="card mb-4" style="width: 400px;">
-            <img class="card-img-top" src="https://www.ikea.com/in/en/images/products/malm-ottoman-bed-white-stained-oak-veneer__0594794_pe676189_s5.jpg?f=s" alt="Bed" width="100%">
+        @foreach($furniture as $furniture)
+            <img class="card-img-top" src="{{ asset('Images') }}/{{$furniture->image}}" alt="Bed" width="100%">
             <div class="card-body" style="max-height: 400px;">
-                <h5 class="card-title">Furniture Name</h5>
+                <h5 class="card-title">{{$furniture->name}}</h5>
                 <p class="card-text" style="white-space: normal;overflow: scroll;height: 200px;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis istud possit, inquit, negare? Immo alio genere; Itaque fecimus. Duo Reges: constructio interrete. Sed residamus, inquit, si placet. <i>Id est enim, de quo quaerimus.</i>Quid ad utilitatem tantae pecuniae? Qui ita affectus, beatum esse numquam probabis; Dat enim intervalla et relaxat. Ita credo. Quae cum essent dicta, discessimus.
+                    RM {{$furniture->price}}
                 </p>
-                <a href="/"><button class="btn btn-dark">More info</button></a>
-                <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
+                <a><button class="btn btn-dark">More detail</button></a>
             </div>
         </div>
 
@@ -56,9 +56,12 @@
                 </p>
                 <a href="/"><button class="btn btn-dark">More info</button></a>
                 <a href="/"><button class="btn btn-outline-dark">Booking</button></a>
+                @endforeach
             </div>
         </div>
     </div>
 </div>
 
 @endsection
+message.txt
+5 KB
