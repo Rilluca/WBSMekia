@@ -54,7 +54,7 @@
     <nav class="navbar-nav navbar-expand-lg fixed-top" style="display: flex;justify-content: center;background-color: white;">
         <div class="logo" style="display: flex;">
             <img src="/Images/Icon.png" alt="" width="" height="" class="d-inline-block align-text-center">
-            <h1>Furniture Shop</h1>
+            <h1>Furniture Catalogue</h1>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right;">
             <ul class="navbar-nav">

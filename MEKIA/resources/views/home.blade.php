@@ -26,14 +26,6 @@
             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/vcbP5cYPvR3bxxsRgf7WXg/o.jpg" class="d-block w-100" alt="...">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" style="border-color: transparent; background-color: transparent;">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" style="border-color: transparent; background-color: transparent;">
-        <span class="visually-hidden">Next</span>
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button>
 </div>
 
 <div class="movie-content" style="background-color: #434d45; padding: 3%;">

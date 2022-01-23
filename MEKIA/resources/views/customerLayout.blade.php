@@ -21,6 +21,13 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
+        .navbar {
+            background: white;
+            width: 1000px;
+            margin: auto;
+
+        }
+
         .nav-link:hover {
             color: black;
         }
@@ -46,26 +53,25 @@
             background-position: 0 0;
             color: red;
         }
+
+        
+        
     </style>
 
 </head>
 
 <body>
-    <nav class="navbar-nav navbar-expand-lg fixed-top" style="display: flex;justify-content: center;background-color: white;">
-        <div class="logo" style="display: flex;">
-            <img src="/Images/Icon.png" alt="" width="" height="" class="d-inline-block align-text-center">
-            <h1>Furniture Shop</h1>
+    <nav class="navbar-nav navbar-expand-md fixed-top" style="justify-content: center;background-color: white;">
+    <a class="navbar-brand"><img src="Images/Icon.png" alt="MEKIA icon" type="image/png" style="width:100px;height:100px;"></a>
+            <h1 style="float:left;">Furniture Catalogue</h1>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right;">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/home">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/furnitures">Furnitures</a>                
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact Us</a>                
+                    <a class="nav-link" href="/viewFurniture">Furnitures</a>                
                 </li>
             </ul>
         </div>
@@ -73,10 +79,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right;">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/foodDrinks"><button class="btnCart"><i class='bx bxs-cart'></i>Cart</button></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/branches"><button class="btnSettings"><i class='bx bxs-lock-open'></i>Login</button></a>
+                    <a class="nav-link" href="/branches"><button class="btnSettings"><i class='bx bxs-lock-open'></i>Staff Login</button></a>
                 </li>
             </ul>
         </div>
